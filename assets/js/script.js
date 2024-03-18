@@ -250,7 +250,8 @@ const scrollRevealOption = {
 
 ScrollReveal().reveal(".site-header__bottom", {
   ...scrollRevealOption,
-  origin: "right",
+  origin: "top",
+  delay:600,
 });
 ScrollReveal().reveal(".dept-card, .doctors-section", {
   ...scrollRevealOption,
@@ -259,7 +260,7 @@ ScrollReveal().reveal(".dept-card, .doctors-section", {
 
 ScrollReveal().reveal(".owl-carousel", {
   ...scrollRevealOption,
-  delay: 200,
+  delay: 500,
 });
 ScrollReveal().reveal(".cta-box", {
   ...scrollRevealOption,
