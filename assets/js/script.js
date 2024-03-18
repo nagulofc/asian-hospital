@@ -251,7 +251,7 @@ const scrollRevealOption = {
 ScrollReveal().reveal(".site-header__bottom", {
   ...scrollRevealOption,
   origin: "top",
-  delay:600,
+  delay:0,
 });
 ScrollReveal().reveal(".dept-card, .doctors-section", {
   ...scrollRevealOption,
