@@ -245,7 +245,7 @@ $(document).ready(function () {
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
-  duration: 1000,
+  duration: 0,
 };
 
 ScrollReveal().reveal(".site-header__bottom", {
