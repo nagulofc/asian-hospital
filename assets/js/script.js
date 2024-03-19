@@ -1,5 +1,28 @@
 
 
+
+$(document).ready(function () {
+  // ---> Site Header Shrink
+  const siteHeader = $(".site-header");
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 30) {
+      siteHeader.addClass("site-header--shrinked");
+    } else {
+      siteHeader.removeClass("site-header--shrinked");
+    }
+
+    // Scroll Top fade in out
+    if ($(document).scrollTop() > 300) {
+      $(".btn--scroll-to-top").addClass("show");
+    } else {
+      $(".btn--scroll-to-top").removeClass("show");
+    }
+  });
+
+  $(".btn--scroll-to-top").on("click", function () {
+    scrollToTop(0, 500);
+  });
+
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
@@ -31,29 +54,6 @@ ScrollReveal().reveal(".col", {
   origin: "bottom",
 });
 
-
-
-$(document).ready(function () {
-  // ---> Site Header Shrink
-  const siteHeader = $(".site-header");
-  $(window).scroll(function () {
-    if ($(document).scrollTop() > 30) {
-      siteHeader.addClass("site-header--shrinked");
-    } else {
-      siteHeader.removeClass("site-header--shrinked");
-    }
-
-    // Scroll Top fade in out
-    if ($(document).scrollTop() > 300) {
-      $(".btn--scroll-to-top").addClass("show");
-    } else {
-      $(".btn--scroll-to-top").removeClass("show");
-    }
-  });
-
-  $(".btn--scroll-to-top").on("click", function () {
-    scrollToTop(0, 500);
-  });
 
   function scrollToTop(offset, duration) {
     $("html, body").animate({ scrollTop: offset }, duration);
