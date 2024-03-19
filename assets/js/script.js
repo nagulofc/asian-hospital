@@ -1,3 +1,38 @@
+
+
+const scrollRevealOption = {
+  distance: "50px",
+  origin: "bottom",
+  
+};
+
+ScrollReveal().reveal(".site-header__bottom", {
+  ...scrollRevealOption,
+  origin: "top",
+  delay:0,
+});
+ScrollReveal().reveal(".dept-card, .doctors-section", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+
+ScrollReveal().reveal(".owl-carousel", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".cta-box", {
+  ...scrollRevealOption,
+  delay: 1500,
+  origin:"top",
+});
+
+ScrollReveal().reveal(".col", {
+  ...scrollRevealOption,
+  origin: "bottom",
+});
+
+
+
 $(document).ready(function () {
   // ---> Site Header Shrink
   const siteHeader = $(".site-header");
